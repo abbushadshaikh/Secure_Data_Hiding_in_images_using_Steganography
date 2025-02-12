@@ -13,7 +13,7 @@ This project allows users to **securely hide encrypted messages** inside images 
 
 ## 🎥 Project Demo:
 
-[![Watch Video](https://via.placeholder.com/800x450.png?text=Click+to+Watch+Demo)](https://github.com/abbushadshaikh/Secure_Data_Hiding_in_images_using_Steganography/raw/main/working_of_secure_data_hiding_using_steganography.mp4)
+[Video: Secure Data Hiding in Images using Steganography](https://github.com/abbushadshaikh/Secure_Data_Hiding_in_images_using_Steganography/blob/main/working_of_secure_data_hiding_using_steganography.mp4)
 
 ## 🛠️ Installation:
 
