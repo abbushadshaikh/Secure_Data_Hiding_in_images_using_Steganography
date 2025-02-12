@@ -21,6 +21,7 @@ Run the following command to install all required libraries:
 " pip install opencv-python numpy cryptography "
 
 Usage:
+
 🔹 Encrypt a Message into an Image: 
 
 1. Run the script: python secure_data_hiding_using_steganography.py
@@ -45,6 +46,9 @@ Security Features:
 📌 Future Scope:
 
 🔹 Support for additional image formats (JPEG, BMP)
+
 🔹 Stronger encryption algorithms (AES-256, RSA)
+
 🔹 Mobile and web-based implementations
+
 🔹 AI-driven steganalysis resistance improvements
