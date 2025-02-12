@@ -11,7 +11,9 @@ This project allows users to **securely hide encrypted messages** inside images 
 ✅ **"Show Location" Button** – Quickly view encrypted & decrypted file paths.  
 ✅ **Cross-Platform Support** – Works on **Windows, Linux (Kali, Ubuntu), and macOS**.  
 
----
+## 🎥 Project Demo:
+
+[![Watch Video] ()
 
 ## 🛠️ Installation  
 
