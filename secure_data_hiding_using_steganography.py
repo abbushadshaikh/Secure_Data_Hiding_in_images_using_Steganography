@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
-import getpass
-from cryptography.fernet import Fernet
 import base64
 import os
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
 import subprocess
+from cryptography.fernet import Fernet
 
 def generate_key(password):
     return base64.urlsafe_b64encode(password.ljust(32).encode()[:32])
@@ -34,7 +33,7 @@ def encrypt_image(image_path, message, password):
 
     encrypted_message = encrypt_message(message, password)
     binary_message = ''.join(format(byte, '08b') for byte in encrypted_message)
-    binary_message += '1111111111111110'
+    binary_message += '1111111111111110'  # End of message indicator
 
     encoded_image = image.copy()
     height, width, _ = encoded_image.shape
@@ -48,7 +47,7 @@ def encrypt_image(image_path, message, password):
             messagebox.showerror("Error", "Image is too small to hold the message.")
             return
         pixel = encoded_image[y, x]
-        encoded_image[y, x] = (pixel[0], pixel[1], (pixel[2] & ~1) | int(bit))
+        encoded_image[y, x, 2] = np.uint8((pixel[2] & 0b11111110) | int(bit))  # FIXED LINE
         x += 1
 
     global encrypted_image_path
@@ -106,11 +105,11 @@ def select_image_file():
 def open_folder(path):
     try:
         if os.name == 'nt':
-            os.startfile(path)
+            os.startfile(path)  # Windows
         elif os.name == 'posix':
-            subprocess.run(['xdg-open', path], check=True)
+            subprocess.run(['xdg-open', path], check=True)  # Linux
         else:
-            subprocess.run(['open', path], check=True)
+            subprocess.run(['open', path], check=True)  # macOS
     except Exception as e:
         messagebox.showerror("Error", f"Could not open folder: {e}")
 
@@ -150,6 +149,7 @@ def decrypt_action():
 
     decrypt_image(image_path, password)
 
+# GUI Setup
 root = tk.Tk()
 root.title("Secure Data Hiding Using Steganography")
 root.geometry("400x400")
