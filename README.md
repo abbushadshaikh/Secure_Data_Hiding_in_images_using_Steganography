@@ -9,11 +9,8 @@ This project allows users to **securely hide encrypted messages** inside images 
 ✅ **User-Friendly GUI** – Easy-to-use interface powered by **Tkinter**.  
 ✅ **Password Protection** – Only users with the correct password can decrypt the hidden message.  
 ✅ **"Show Location" Button** – Quickly view encrypted & decrypted file paths.  
-✅ **Cross-Platform Support** – Works on **Windows, Linux (Kali, Ubuntu), and macOS**.  
+✅ **Cross-Platform Support** – Works on **Windows, Linux (Kali, Ubuntu), and macOS as long as they have pyhton**.  
 
-## 🎥 Project Demo:
-
-[Video: Secure Data Hiding in Images using Steganography](https://github.com/abbushadshaikh/Secure_Data_Hiding_in_images_using_Steganography/blob/main/working_of_secure_data_hiding_using_steganography.mp4)
 
 ## 🛠️ Installation:
 
