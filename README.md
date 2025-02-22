@@ -1,10 +1,10 @@
 AICTE INTERNSHIP PROJECT
-# 🔒 Secure Data Hiding Using Steganography
+# Secure Data Hiding Using Steganography
 
-## 📌 Project Overview: 
+##  Project Overview: 
 This project allows users to **securely hide encrypted messages** inside images using **steganography**. It combines **cryptography and image processing** to ensure that sensitive data remains hidden and only retrievable by authorized users with the correct password.  
 
-## ✨ Key Features:   
+##  Key Features:   
 ✅ **Secure Image-Based Encryption** – Encrypts and embeds messages inside images.  
 ✅ **User-Friendly GUI** – Easy-to-use interface powered by **Tkinter**.  
 ✅ **Password Protection** – Only users with the correct password can decrypt the hidden message.  
